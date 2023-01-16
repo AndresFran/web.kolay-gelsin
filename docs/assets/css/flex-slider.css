@@ -2,10 +2,20 @@
 /* ====================================================================================================================
  * FONT-FACE
  * ====================================================================================================================*/
-@font-face {
+/* @font-face {
   font-family: 'flexslider-icon';
   src: url('../fonts/flexslider-icon.eot');
   src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Just-tell-me-what';
+  src:url('Just-tell-me-what.ttf.woff') format('woff'),
+      url('Just-tell-me-what.ttf.svg#Just-tell-me-what') format('svg'),
+      url('Just-tell-me-what.ttf.eot'),
+      url('Just-tell-me-what.ttf.eot?#iefix') format('embedded-opentype'); 
   font-weight: normal;
   font-style: normal;
 }
@@ -127,7 +137,7 @@ html[xmlns] .flexslider .slides {
   transition: all 0.3s ease-in-out;
 }
 .flex-direction-nav a:before {
-  font-family: "flexslider-icon";
+  font-family: 'Just-tell-me-what';
   font-size: 26px;
   display: inline-block;
   content: '\f001';
@@ -178,7 +188,7 @@ html[xmlns] .flexslider .slides {
   color: #000;
 }
 .flex-pauseplay a:before {
-  font-family: "flexslider-icon";
+  font-family: 'Just-tell-me-what';
   font-size: 20px;
   display: inline-block;
   content: '\f004';

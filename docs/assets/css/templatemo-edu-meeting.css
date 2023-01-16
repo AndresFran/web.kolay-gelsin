@@ -20,9 +20,22 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+ */
+
+@font-face {
+  font-family: 'Just-tell-me-what';
+  src:url('Just-tell-me-what.ttf.woff') format('woff'),
+      url('Just-tell-me-what.ttf.svg#Just-tell-me-what') format('svg'),
+      url('Just-tell-me-what.ttf.eot'),
+      url('Just-tell-me-what.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* 
+
 
 ---------------------------------------------
 reset
@@ -136,7 +149,7 @@ hgroup {
 
 html,
 body {
-  font-family: "Patrick Hand", sans-serif;
+  font-family: 'Just-tell-me-what';
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -187,7 +200,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: "Noteworthy", sans-serif;
+  font-family: 'Just-tell-me-what', sans-serif;
 }
 
 ::selection {
@@ -426,7 +439,7 @@ header
 }
 
 .header-area .main-nav .nav li.has-sub:after {
-  font-family: _font_custom;
+  font-family: 'Just-tell-me-what';
   content: "\f107";
   font-size: 12px;
   color: #fff;
@@ -900,7 +913,7 @@ services
 
 .services .owl-nav .owl-prev:before {
   display: inline-block;
-  font-family: "_font_custom";
+  font-family: 'Just-tell-me-what'; 
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
@@ -939,7 +952,7 @@ services
 
 .services .owl-nav .owl-next:before {
   display: inline-block;
-  font-family: "_font_custom";
+  font-family: 'Just-tell-me-what';
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
@@ -1263,7 +1276,7 @@ section.our-courses {
 
 .our-courses .owl-nav .owl-prev:before {
   display: inline-block;
-  font-family: "_font_custom";
+  font-family: 'Just-tell-me-what';
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
@@ -1302,7 +1315,7 @@ section.our-courses {
 
 .our-courses .owl-nav .owl-next:before {
   display: inline-block;
-  font-family: "_font_custom";
+  font-family: 'Just-tell-me-what';
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
