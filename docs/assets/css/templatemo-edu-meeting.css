@@ -857,7 +857,7 @@ services
 */
 
 .services {
-  margin-top: -185px;
+  margin-top: -100px;
   position: absolute;
   width: 100%;
 }
@@ -971,13 +971,13 @@ upcoming meetings
 */
 
 section.upcoming-meetings {
-  background-image: url(../images/meetings-bg.jpg);
+  background-image: url(../images/img-body/fondo.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 230px;
-  padding-bottom: 110px;
+  padding-top: 350px;
+  padding-bottom: 50px;
 }
 
 section.upcoming-meetings .section-heading {
@@ -1403,7 +1403,7 @@ contact us
 */
 
 section.contact-us {
-  background-image: url(../images/meetings-bg.jpg);
+  background-image: url(../images/img-body/fondo.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
