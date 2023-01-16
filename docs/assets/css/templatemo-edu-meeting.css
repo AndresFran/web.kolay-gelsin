@@ -853,8 +853,8 @@ services
   background-image: url(../images/fondo-carrusel.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  border-radius: 20px;
+  background-position:center top;
+  border-radius: 200px;
   text-align: center;
   color: #fff;
   padding: 40px;
@@ -972,7 +972,7 @@ section.upcoming-meetings .section-heading {
 }
 
 section.upcoming-meetings .categories {
-  background-color: #fff;
+  background-color: #008fb5;
   border-radius: 20px;
   padding: 40px;
   margin-right: 45px;
@@ -984,7 +984,7 @@ section.upcoming-meetings .categories h4 {
   color: #1f272b;
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #008fb5;
 }
 
 section.upcoming-meetings .categories ul li {
@@ -1037,13 +1037,13 @@ section.upcoming-meetings .categories .main-button-red a {
   font-size: 16px;
   color: #1f272b;
   font-weight: 600;
-  background-color: rgba(250, 250, 250, 0.9);
+  background-color: #008fb5;
   padding: 7px 12px;
   border-radius: 10px;
 }
 
 .meeting-item .down-content {
-  background-color: #fff;
+  background-color: #008fb5;
   padding: 30px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -1179,12 +1179,12 @@ section.our-courses {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
+  padding-top: 10px;
   padding-bottom: 130px;
 }
 
 .our-courses .item .down-content {
-  background-color: #fff;
+  background-color: #008fb5;
 }
 
 .our-courses .item .down-content h4 {
@@ -1192,7 +1192,7 @@ section.our-courses {
   font-size: 22px;
   color: #1f272b;
   text-align: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #008fb5;
 }
 
 .our-courses .item .down-content .info {
@@ -1371,7 +1371,7 @@ section.our-facts h2 {
 section.our-facts .video {
   text-align: center;
   margin-left: 70px;
-  background-image: url(../images/video-item-bg.jpg);
+  background-image: url(../images/img-body/kg-play_for_video.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1379,7 +1379,7 @@ section.our-facts .video {
 }
 
 section.our-facts .video img {
-  padding: 170px 0px;
+  padding: 260px 0px;
   max-width: 56px;
 }
 
