@@ -759,7 +759,20 @@ banner
   z-index: -1;
 }
 
+#bg-video1 {
+  min-width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit:contain;
+  z-index: -1;
+}
+
 #bg-video::-webkit-media-controls {
+  display: none !important;
+}
+
+#bg-video1::-webkit-media-controls {
   display: none !important;
 }
 
