@@ -173,8 +173,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 50px;
-  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -259,6 +259,22 @@ body {
 }
 
 .main-button-red-1 a:hover {
+  opacity: 0.9;
+}
+
+.main-button-red-2 a {
+  font-size: 20px;
+  color: #000000;
+  background-color: #008fb5;
+  padding: 30px 55px;
+  display: inline-block;
+  border-radius: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.main-button-red-2 a:hover {
   opacity: 0.9;
 }
 
@@ -1073,9 +1089,9 @@ section.upcoming-meetings .categories .main-button-red a {
 
 .meeting-item .down-content {
   background-color: #008fb5;
-  padding: 30px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  padding: 10px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .meeting-item .down-content .date {
