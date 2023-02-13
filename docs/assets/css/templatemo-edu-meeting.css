@@ -246,6 +246,22 @@ body {
   opacity: 0.9;
 }
 
+.main-button-red-1 a {
+  font-size: 50px;
+  color: #000000;
+  background-color: #008fb5;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.main-button-red-1 a:hover {
+  opacity: 0.9;
+}
+
 .main-button-yellow a {
   font-size: 23px;
   color: #fff;
