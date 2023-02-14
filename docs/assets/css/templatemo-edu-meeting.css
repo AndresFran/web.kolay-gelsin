@@ -188,7 +188,7 @@ p {
 }
 
 img {
-  width: 100%;
+  width: 70%;
   overflow: hidden;
 }
 
@@ -2073,4 +2073,54 @@ responsive
   .header-area .main-nav .nav li ul.sub-menu li a {
     color: #1f272b;
   }
+}
+
+/* @media only screen and (max-width: 1199px) {
+	
+	.social-icons li a {
+	  width:25px;
+	  height:30px;
+	  display:inline-block;
+	  line-height:30px;
+	  text-align:center;
+	  background: rgba(255, 255, 255, 0.1);
+	  color: rgba(255,255,255,1);
+	  font-size:14px;
+	} */
+
+  
+
+/*==============================================
+SOCIAL ICONS CSS
+================================================*/
+#social-icons {
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right:0;
+  z-index: 199;
+}
+.social-icons {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.social-icons li {
+  display: block;
+  margin: 1px 0px;
+}
+.social-icons li a {
+  width:30px;
+  height:30px;
+  display:flexbox;
+  line-height:50px;
+  text-align:center;
+  background: rgba(255, 255, 255, 0);
+  color: rgba(255,255,255,0);
+  font-size:30px;
+}
+.social-icons li a:hover {
+  color:#1e1e1e;
+  background-color: #ffffff00;
 }
