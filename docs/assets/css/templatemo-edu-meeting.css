@@ -2096,7 +2096,7 @@ SOCIAL ICONS CSS
 #social-icons {
   padding: 0;
   position: fixed;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   right:0;
   z-index: 199;
