@@ -20,9 +20,9 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
- */
+ 
 
 @font-face {
   font-family: 'Just-tell-me-what';
@@ -471,7 +471,7 @@ header
 }
 
 .header-area .main-nav .nav li.has-sub:after {
-  font-family: 'Just-tell-me-what';
+  font-family: FontAwesome;
   content: "\f107";
   font-size: 12px;
   color: #fff;
@@ -945,7 +945,7 @@ services
 
 .services .owl-nav .owl-prev:before {
   display: inline-block;
-  font-family: 'Just-tell-me-what'; 
+  font-family: 'FontAwesome'; 
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
@@ -984,7 +984,7 @@ services
 
 .services .owl-nav .owl-next:before {
   display: inline-block;
-  font-family: 'Just-tell-me-what';
+  font-family: 'FontAwesome';
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
