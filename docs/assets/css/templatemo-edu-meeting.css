@@ -1308,7 +1308,7 @@ section.our-courses {
 
 .our-courses .owl-nav .owl-prev:before {
   display: inline-block;
-  font-family: 'Just-tell-me-what';
+  font-family: 'FontAwesome';
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
@@ -1347,7 +1347,7 @@ section.our-courses {
 
 .our-courses .owl-nav .owl-next:before {
   display: inline-block;
-  font-family: 'Just-tell-me-what';
+  font-family: 'FontAwesome';
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
@@ -1449,7 +1449,7 @@ section.our-courses-1 {
 
 .our-courses-1 .owl-nav .owl-prev:before {
   display: inline-block;
-  font-family: 'Just-tell-me-what';
+  font-family: 'FontAwesome';
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
@@ -1488,7 +1488,7 @@ section.our-courses-1 {
 
 .our-courses-1 .owl-nav .owl-next:before {
   display: inline-block;
-  font-family: 'Just-tell-me-what';
+  font-family: 'FontAwesome';
   color: #1e1e1e;
   font-size: 25px;
   font-weight: 700;
