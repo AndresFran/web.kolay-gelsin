@@ -2143,7 +2143,7 @@ SOCIAL ICONS CSS
 	z-index: 99;
 }
 .btn-flotante:hover {
-	background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
+	background-color: #602ca5; /* Color de fondo al pasar el cursor */
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
 }
