@@ -350,7 +350,7 @@ header
 }
 
 .background-header {
-  background-color: #fff !important;
+  background-color: rgba(50, 173, 207, 0.877) !important;
   height: 80px !important;
   position: fixed !important;
   top: 0 !important;
@@ -1699,6 +1699,137 @@ section.contact-us .right-info ul li span {
 }
 
 /*
+
+/* 
+---------------------------------------------
+contact us 1
+--------------------------------------------- 
+*/
+
+section.contact-us-1 {
+  background-image: url(../images/img-body/fondo.png);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0px 0px 0px;
+}
+
+section.contact-us-1 #contact {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+section.contact-us-1 #contact h2 {
+  text-transform: uppercase;
+  color: #1f272b;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+section.contact-us-1 #contact input {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7a7a7a;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+
+section.contact-us-1 #contact textarea {
+  width: 100%;
+  min-height: 140px;
+  max-height: 180px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7a7a7a;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+section.contact-us-1 #contact button {
+  font-size: 13px;
+  color: #fff;
+  background-color: #45297d;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  border: none;
+  outline: none;
+}
+
+section.contact-us-1 #contact button:hover {
+  opacity: 0.9;
+}
+
+section.contact-us-1 .right-info {
+  background-color: #45297d;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+section.contact-us-1 .right-info ul li {
+  display: inline-block;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.15);
+  margin-bottom: -30px;
+  padding-bottom: 30px;
+}
+
+section.contact-us-1 .right-info ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+section.contact-us-1 .right-info ul li h6 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+section.contact-us-1 .right-info ul li span {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  border-top: 1px solid rgba(250, 250, 250, 0.15);
+  padding: 50px 0px;
+}
+.footer p {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #45297d;
+}
+
+.footer p a {
+  color: #008fb5;
+}
+
+/*
 ---------------------------------------------
 heading page
 ---------------------------------------------
@@ -1740,13 +1871,13 @@ upcoming meetings page
 */
 
 section.meetings-page {
-  background-image: url(../images/meetings-page-bg.jpg);
+  background-image: url(../images/img-body/fondo2.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
-  padding-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 section.meetings-page .filters {
@@ -2134,10 +2265,10 @@ SOCIAL ICONS CSS
 	border-radius: 5px; /* Borde del boton */
 	letter-spacing: 2px; /* Espacio entre letras */
 	background-color: #1a6e859f; /* Color de fondo */
-	padding: 18px 30px; /* Relleno del boton */
+	padding: 18px 24px; /* Relleno del boton */
 	position: fixed;
 	bottom: 40px;
-	right: 40px;
+	right: 4px;
 	transition: all 300ms ease 0ms;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	z-index: 99;
