@@ -1500,6 +1500,147 @@ section.our-courses-1 {
   line-height: 50px;
 }
 
+
+section.our-courses-2 {
+  background-image: url(../images/img-body/fondo2.png);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 140px;
+  padding-bottom: 30px;
+}
+
+.our-courses-2 .item .down-content {
+  background-color: #008fb5;
+}
+
+.our-courses-2 .item .down-content h4 {
+  padding: 25px;
+  font-size: 22px;
+  color: #1f272b;
+  text-align: center;
+  border-bottom: 1px solid #008fb5;
+}
+
+.our-courses-2 .item .down-content .info {
+  padding: 25px;
+}
+
+.our-courses-2 .item .down-content .info ul li {
+  display: inline-block;
+  margin-right: 1px;
+}
+
+.our-courses-2 .item .down-content .info ul li i {
+  color: #008fb5;
+  font-size: 14px;
+}
+
+.our-courses-2 .item .down-content .info span {
+  color: #45297d;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+}
+
+.our-courses-2 .owl-nav {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-45px);
+}
+
+.our-courses-2 .owl-dots {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.our-courses-2 .owl-dots .owl-dot {
+  transition: all 0.5s;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  margin: 0px 5px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.our-courses-2 .owl-dots .active {
+  width: 24px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.our-courses-2 .owl-nav .owl-prev {
+  margin-right: 10px;
+  outline: none;
+  position: absolute;
+  left: -80px;
+}
+
+.our-courses-2 .owl-nav .owl-prev span,
+.our-courses-2 .owl-nav .owl-next span {
+  opacity: 0;
+}
+
+.our-courses-2 .owl-nav .owl-prev:before {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  color: #1e1e1e;
+  font-size: 25px;
+  font-weight: 700;
+  content: "\f104";
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+}
+
+.our-courses-2 .owl-nav .owl-prev {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.our-courses-2 .owl-nav .owl-prev:hover {
+  opacity: 0.9;
+}
+
+.our-courses-2 .owl-nav .owl-next {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.our-courses-2 .owl-nav .owl-next:hover {
+  opacity: 0.9;
+}
+
+.our-courses-2 .owl-nav .owl-next {
+  margin-left: 10px;
+  outline: none;
+  position: absolute;
+  right: -85px;
+}
+
+.our-courses-2 .owl-nav .owl-next:before {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  color: #1e1e1e;
+  font-size: 25px;
+  font-weight: 700;
+  content: "\f105";
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+}
 /*
 ---------------------------------------------
 our facts
