@@ -2397,3 +2397,8 @@ blockquote .ratings {
   font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
+
+.ratings {
+  width: 20%;
+  overflow: hidden;
+}
