@@ -1146,7 +1146,7 @@ section.apply-now {
 
 section.apply-now .item {
   background-color: rgba(250, 250, 250, 0.15);
-  padding: 47px;
+  padding: 38px;
   margin-bottom: 30px;
 }
 
@@ -1165,7 +1165,7 @@ section.apply-now .item p {
 
 .accordions {
   border-radius: 20px;
-  padding: 40px;
+  padding: 49px;
   background-color: #fff;
   margin-left: 0px;
 }
