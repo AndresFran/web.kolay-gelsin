@@ -850,7 +850,7 @@ banner
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 76px;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 800;
   color: #fff;
   letter-spacing: 1px;
