@@ -380,7 +380,7 @@ header
 }
 
 .header-area {
-  background-color: rgba(250, 250, 250, 0.15);
+  background-color: rgba(250, 250, 250);
   position: absolute;
   top: 5px;
   left: 0;
@@ -459,7 +459,7 @@ header
   font-weight: 500;
   font-size: 18px;
   text-transform: uppercase;
-  color: #fff;
+  color: #000000;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1180,7 +1180,7 @@ section.apply-now .item p {
 }
 
 section.apply-now1 {
-  background-image: url(../images/img-body/fondo2.png);
+  background-image: url(../images/img-body/fondo\ blanco.jpeg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1189,13 +1189,13 @@ section.apply-now1 {
 }
 
 section.apply-now1 .item {
-  background-color: rgba(250, 250, 250, 0.15);
+  background-color: rgba(19, 18, 18, 0.15);
   padding: 38px;
   margin-bottom: 30px;
 }
 
 section.apply-now1 .item h3 {
-  color: #fff;
+  color: #000000;
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 700;
@@ -1203,7 +1203,7 @@ section.apply-now1 .item h3 {
 }
 
 section.apply-now1 .item p {
-  color: #fff;
+  color: #000000;
   margin-bottom: 20px;
 }
 
