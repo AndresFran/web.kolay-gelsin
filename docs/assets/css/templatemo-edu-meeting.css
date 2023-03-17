@@ -350,6 +350,7 @@ header
 }
 
 .background-header {
+  background-image: url(/docs/assets/images/img-logo/logo_purple.png);
   background-color: #fff !important;
   height: 80px !important;
   position: fixed !important;
@@ -377,6 +378,19 @@ header
 }
 
 .header-area {
+  background-color: rgba(250, 250, 250, 0.15);
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.header-area1 {
   background-color: rgba(250, 250, 250, 0.15);
   position: absolute;
   top: 5px;
