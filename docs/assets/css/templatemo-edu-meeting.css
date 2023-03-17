@@ -2812,3 +2812,35 @@ blockquote .ratings {
   width: 20%;
   overflow: hidden;
 }
+
+.faq {
+  width:70%;
+  margin: 0 auto;
+  }
+  .faq div {
+  border: 1px solid #000;
+  margin: 10px 0px 50px 0px;
+  background-color:rgba(255, 255, 255, 0.795);
+  }
+  .question {
+  font-size:25px;
+  background-color:#008fb5;
+  margin:0px;
+  padding: 15px;
+  }
+  .answer {
+  font-size:20px;
+  margin:0px;
+  padding: 0px 15px;
+  line-height:2;
+  max-height:0px;
+  overflow:hidden;
+  transition:2s;
+  }
+  .opener
+  {
+  font-size:50px;
+  float:right;
+  line-height:0.8;
+  cursor: pointer;
+  }
