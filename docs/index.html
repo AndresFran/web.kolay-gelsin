@@ -6,11 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
+    <meta name="author" content="Kolay Gelsin Center">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     
     <!--Google Font "Patrick Hand" similar to the one you told me-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -38,49 +39,47 @@
 
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <nav class="main-nav">
-                      <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo"><img src="assets/images/img-logo/logo_purple.png"></a>
-                      <!-- ***** Logo End ***** -->
-                      <!-- ***** Menu Start ***** -->
-                      <ul class="nav">
-                          <!-- <li class="scroll-to-section"><a href="#top" class="active">Home</a></li> -->
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav d-flex justify-content-between mr-2">
+          <!-- ***** Logo Start ***** -->
+          <a href="index.html" class="logo d-flex d-flex align-items-center"><img src="assets/images/img-logo/logo_purple.png"></a>
+          <!-- ***** Logo End ***** -->
+          <!-- ***** Menu Start ***** -->
+          <ul class="nav">
+            <!-- <li class="scroll-to-section"><a href="#top" class="active">Home</a></li> -->
 
-                          <li class="has-sub" class="scroll-to-section">
-                            <a href="#about">Kolay Gelsin</a>
-                            <ul class="sub-menu">
-                                <li><a href="starting.html">Starting with Turkish</a></li>
-                                <li><a href="program.html">Our Program</a></li>
-                                <li><a href="faq.html">FAQ's</a></li>
-                            </ul>
-                        </li>
-                          
+            <li class="has-sub" class="scroll-to-section">
+              <a href="#about">Kolay Gelsin</a>
+              <ul class="sub-menu">
+                <li><a href="starting.html">Starting with Turkish</a></li>
+                <li><a href="program.html">Our Program</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
+              </ul>
+            </li>
 
-                          <li class="scroll-to-section"><a href="#staff">Staff</a></li>
-                          <li class="scroll-to-section"><a href="#courses">Our Classes</a></li>
-                          
-                          <!-- <li class="has-sub">
-                              <a href="javascript:void(0)">Gallery</a>
-                              <ul class="sub-menu">
-                                  <li><a href="photos.html">Photos</a></li>
-                                  <li><a href="videos.html">Videos</a></li>
-                              </ul>
-                          </li> -->
 
-                          <li class="scroll-to-section"><a href="#testimonial">Testimonials</a></li> 
-                          <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> 
-                      </ul>        
-                      <a class='menu-trigger'>
-                          <span>Menu</span>
-                      </a>
-                      <!-- ***** Menu End ***** -->
-                  </nav>
-              </div>
-          </div>
+            <li class="scroll-to-section"><a href="#staff">Staff</a></li>
+            <li class="scroll-to-section"><a href="#courses">Our Classes</a></li>
+
+            <!-- <li class="has-sub">
+                <a href="javascript:void(0)">Gallery</a>
+                <ul class="sub-menu">
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+            </li> -->
+
+            <li class="scroll-to-section"><a href="#testimonial">Testimonials</a></li>
+            <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+          </ul>
+          <a class='menu-trigger'>
+            <span>Menu</span>
+          </a>
+          <!-- ***** Menu End ***** -->
+        </nav>
       </div>
+    </div>
   </header>
   <!-- ***** Header Area End ***** -->
 
@@ -446,60 +445,70 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-heading" align="center">
+          <div class="section-heading text-white text-center">
             <h1>Testimonial - Our students say:</h1>
           </div>
         </div>
 
+
           <section class="testimonials">
-            <div class="t_wrapper" align="justify">
-              <div class="item">
-                <blockquote>
-                  <i>"I have been studying at Kolay Gelsin for about three months now.
-                    Through a combination of listening skills training, hands-on activities, I
-                    have been able to expand my understanding of the language. Kolay
-                    Gelsin has helped me to achieve this progress".</i>
-                </blockquote>
-                <p>Emily</p>
-              </div>  
-              <div class="two-col-testimonial">
-                <div class="item light">
-                  <blockquote>
-                    <i>"Kolay Gelsin center is an excellent learning center. In just 6 months, my
+
+            <div id="testimonials-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-item">
+                    <p>"I have been studying at Kolay Gelsin for about three months now.
+                      Through a combination of listening skills training, hands-on activities, I
+                      have been able to expand my understanding of the language. Kolay
+                      Gelsin has helped me to achieve this progress".</p>
+                    <p>Emily</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item">
+                    <p>"Kolay Gelsin center is an excellent learning center. In just 6 months, my
                       Turkish and my wife’s Turkish has flourished. It is a very professional
-                      environment and very friendly".</i> 
-                  </blockquote>
-                  <p>Kaleb</p>
-                </div>  
-                <div class="item dark">
-                  <blockquote>
-                    <i>"The best Turkish language classes you could imagine! The teaching
+                      environment and very friendly".</p>
+                    <p>Kaleb</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item">
+                    <p>"The best Turkish language classes you could imagine! The teaching
                       method here helps you not only to learn the language, but also gives a deep
                       dive into local culture. There are no boring books, but a lot if language
-                      practice from the very beginning".</i> 
-                  </blockquote>
-                  <p>Lewdmila</p>
-                </div>  
-              </div>  
-              
-              <div class="one-col">
-                <div class="item gradient">
-                  <blockquote>
-                    <img class="ratings" src="assets/images/img-testimonial/star-rating.png" alt="star ratings">
-                    <i> "I had the chance to start to study Turkish in Kolay Gelsin and it was worthy.
+                      practice from the very beginning".</p>
+                    <p>Lewdmila</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item">
+                    <p> "I had the chance to start to study Turkish in Kolay Gelsin and it was worthy.
                       It was the first time that I tried GPA method and blows my mind on how
-                      fast I could start to understand and speak with local people".</i>
-                  </blockquote>
-                  <p>Ricardo</p>
-                </div>  
+                      fast I could start to understand and speak with local people".</p>
+                    <p>Ricardo</p>
+                  </div>
+                </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
 
-              
-              <div class="cta">
-                <p>What are you waiting for to study with us with an innovative method?</p>
-                <a href="https://api.whatsapp.com/send?phone=+905077530914&text=Hello, I need more information!!" target="_blank">Contact Us →</a>
-              </div>  
-            </div>    
+            <div class="cta">
+              <p class="text-white">What are you waiting for to study with us with an innovative method?</p>
+              <a href="https://api.whatsapp.com/send?phone=+905077530914&text=Hello, I need more information!!" class="btn-contact-us" target="_blank">Contact Us</a>
+            </div> 
 
           </section>  
         
@@ -662,7 +671,7 @@
   
   <!-- API WHATSAPP CON MENSAJE PREDEFINIDO -->
   <div class="col-lg-4">
-    <a href="https://api.whatsapp.com/send?phone=+905077530914&text=Hello, I need more information!!" target="_blank" class="btn-flotante">Contact Us</a>
+    <a href="https://api.whatsapp.com/send?phone=+905077530914&text=Hello, I need more information!!" target="_blank" class="btn-contact-us btn-flotante">Contact Us</a>
   </div>
   
 
@@ -670,7 +679,7 @@
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
@@ -727,5 +736,4 @@
     </script>
 </body>
 
-</body>
 </html>
