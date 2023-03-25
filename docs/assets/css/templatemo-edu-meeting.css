@@ -1211,6 +1211,7 @@ section.apply-now1 .item h3 {
 
 section.apply-now1 .item p {
   color: #000000;
+  font-size: 1.125rem;
   margin-bottom: 20px;
 }
 
@@ -2719,7 +2720,6 @@ blockquote .ratings {
   margin: 0 auto;
   }
   .faq div {
-  border: 1px solid #000;
   margin: 10px 0px 50px 0px;
   background-color:rgba(255, 255, 255, 0.795);
   }
