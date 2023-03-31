@@ -1918,6 +1918,11 @@ section.contact-us #contact textarea {
   margin-bottom: 30px;
 }
 
+*:disabled {
+  color: linen !important;
+  opacity: 1 !important;
+}
+
 section.contact-us #contact button {
   font-size: 13px;
   color: #fff;
