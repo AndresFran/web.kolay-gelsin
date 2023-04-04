@@ -59,10 +59,17 @@ function parseMessage(array $data): string
     return wordwrap($message);
 }
 
+function logError(\Exception|Throwable|string $e): void
+{
+    $today = (new DateTime())->format('Y-m-d');
+    error_log($e, 3, "{$_ENV['LOGS_FOLDER']}/{$today}.log");
+}
+
 
 function sendEmail(array $data): array
 {
     try {
+        throw new Exception('ajajaja');
         $mail = new PHPMailer(true);
 
         //Enable verbose debug output
@@ -82,7 +89,8 @@ function sendEmail(array $data): array
 
         $mail->send();
         return ['message' => 'Mail sent'];
-    } catch (\PHPMailer\PHPMailer\Exception $e) {
+    } catch (\PHPMailer\PHPMailer\Exception|Exception $e) {
+        logError($e);
         throw new InvalidArgumentException($e->getMessage());
     }
 }

@@ -3,3 +3,4 @@
 /docs/.env
 /composer.lock
 **/.DS_Store
+/docs/logs/*
