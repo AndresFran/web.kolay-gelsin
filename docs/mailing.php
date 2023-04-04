@@ -62,14 +62,21 @@ function parseMessage(array $data): string
 function logError(\Exception|Throwable|string $e): void
 {
     $today = (new DateTime())->format('Y-m-d');
-    error_log($e, 3, "{$_ENV['LOGS_FOLDER']}/{$today}.log");
+    error_log("{$e}" . PHP_EOL, 3, "{$_ENV['LOGS_FOLDER']}/{$today}-error.log");
+}
+
+function logEmail(string $mail): void
+{
+    $today = (new DateTime())->format('hd-m-Y-H-i-s');
+    error_log($mail, 3, "{$_ENV['LOGS_FOLDER']}/{$today}-mail.log");
+
 }
 
 
 function sendEmail(array $data): array
 {
+    $message = parseMessage($data);
     try {
-        throw new Exception('ajajaja');
         $mail = new PHPMailer(true);
 
         //Enable verbose debug output
@@ -85,12 +92,14 @@ function sendEmail(array $data): array
         $mail->setFrom($data['email'], $data['name']);
         $mail->addAddress($_ENV['SMTP_RECEIVER_EMAIL'], $_ENV['SMTP_RECEIVER_NAME']);//Add a recipient
         $mail->Subject = $_ENV['SMTP_RECEIVER_SUBJECT'];
-        $mail->Body = parseMessage($data);
+        $mail->Body = $message;
 
         $mail->send();
         return ['message' => 'Mail sent'];
     } catch (\PHPMailer\PHPMailer\Exception|Exception $e) {
         logError($e);
         throw new InvalidArgumentException($e->getMessage());
+    } finally {
+        logEmail($message);
     }
 }
