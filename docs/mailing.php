@@ -69,10 +69,10 @@ function sendEmail(array $data): array
         $mail->SMTPDebug = SMTP::DEBUG_OFF;//Send using SMTP
         $mail->isSMTP();//Set the SMTP server to send through
         $mail->Host = $_ENV['SMTP_HOST'];//Enable SMTP authentication
-        //$mail->SMTPAuth = $_ENV['SMTP_AUTH'];//SMTP username
+        $mail->SMTPAuth = $_ENV['SMTP_AUTH'];//SMTP username
         $mail->Username = $_ENV['SMTP_USERNAME'];//SMTP password
         $mail->Password = $_ENV['SMTP_PASSWORD'];//Enable implicit TLS encryption
-        //$mail->SMTPSecure = $_ENV['SMTP_ENCRYPTION_METHOD'];//TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->SMTPSecure = $_ENV['SMTP_ENCRYPTION_METHOD'];//TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         $mail->Port = $_ENV['SMTP_PORT'];//Recipients
 
         $mail->setFrom($data['email'], $data['name']);
