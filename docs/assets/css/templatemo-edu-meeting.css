@@ -2680,8 +2680,12 @@ blockquote .ratings {
 
 .testimonial-item {
   background-color: #1a6e859f;
-  height: 36vh;
-  padding: 5vh 10vw;
+  height: 42vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .testimonial-item p {
@@ -2689,6 +2693,31 @@ blockquote .ratings {
   font-size: 1.5rem;
   line-height: 44px;
 }
+
+@media screen and (max-width: 800px) {
+  .testimonial-item {
+    height: 50vh;
+  }
+
+  .testimonial-item p {
+    font-size: 1rem;
+    line-height: 24px;
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .testimonial-item {
+    /*height: 32vh;*/
+  }
+
+  .testimonial-item p {
+    font-size: 1.2rem;
+    line-height: 30px;
+
+  }
+}
+
 
 .cta {
   margin-top: 55px;
@@ -2750,3 +2779,20 @@ blockquote .ratings {
   line-height:0.8;
   cursor: pointer;
   }
+
+
+  .responsive-menu-open {
+    display: block!important;
+    width: 300px!important;
+    position: fixed!important;
+    top: 0!important;
+    right: 0!important;
+  }
+
+.responsive-menu-close {
+  display: block!important;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}

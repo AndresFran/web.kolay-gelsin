@@ -1,6 +1,5 @@
 (function ($) {
-	return;
-	
+
 	"use strict";
 
 	// $(window).scroll(function() {
@@ -14,24 +13,24 @@
 	//     $("header").removeClass("background-header");
 	//   }
 	// });
-	
-	$('.filters ul li').click(function(){
-        $('.filters ul li').removeClass('active');
-        $(this).addClass('active');
-          
-          var data = $(this).attr('data-filter');
-          $grid.isotope({
-            filter: data
-          })
-        });
 
-        var $grid = $(".grid").isotope({
-          itemSelector: ".all",
-          percentPosition: true,
-          masonry: {
-            columnWidth: ".all"
-          }
-        });
+	// $('.filters ul li').click(function(){
+    //     $('.filters ul li').removeClass('active');
+    //     $(this).addClass('active');
+    //
+    //       var data = $(this).attr('data-filter');
+    //       $grid.isotope({
+    //         filter: data
+    //       })
+    //     });
+
+	// var $grid = $(".grid").isotope({
+    //       itemSelector: ".all",
+    //       percentPosition: true,
+    //       masonry: {
+    //         columnWidth: ".all"
+    //       }
+    //     });
 
 
 	const Accordion = {
@@ -101,61 +100,61 @@
 	  }
 	};
 
-	(function() {
-	  // Initiate all instances on the page
-	  const accordions = document.getElementsByClassName("accordions");
-	  for (let i = 0; i < accordions.length; i++) {
-	    Accordion.init(accordions[i]);
-	  }
-	})();
+	// (function() {
+	//   // Initiate all instances on the page
+	//   const accordions = document.getElementsByClassName("accordions");
+	//   for (let i = 0; i < accordions.length; i++) {
+	//     Accordion.init(accordions[i]);
+	//   }
+	// })();
+	//
+	//
+	// $('.owl-service-item').owlCarousel({
+	// 	items:3,
+	// 	loop:true,
+	// 	dots: true,
+	// 	nav: true,
+	// 	autoplay: true,
+	// 	margin:30,
+	// 	  responsive:{
+	// 		  0:{
+	// 			  items:1
+	// 		  },
+	// 		  600:{
+	// 			  items:2
+	// 		  },
+	// 		  1000:{
+	// 			  items:3
+	// 		  }
+	// 	  }
+	//   })
+	//
+	// $('.owl-courses-item').owlCarousel({
+	// 	items:4,
+	// 	loop:true,
+	// 	dots: true,
+	// 	nav: true,
+	// 	autoplay: true,
+	// 	margin:30,
+	// 	  responsive:{
+	// 		  0:{
+	// 			  items:1
+	// 		  },
+	// 		  600:{
+	// 			  items:2
+	// 		  },
+	// 		  1000:{
+	// 			  items:4
+	// 		  }
+	// 	  }
+	//   })
 
-
-	$('.owl-service-item').owlCarousel({
-		items:3,
-		loop:true,
-		dots: true,
-		nav: true,
-		autoplay: true,
-		margin:30,
-		  responsive:{
-			  0:{
-				  items:1
-			  },
-			  600:{
-				  items:2
-			  },
-			  1000:{
-				  items:3
-			  }
-		  }
-	  })
-
-	$('.owl-courses-item').owlCarousel({
-		items:4,
-		loop:true,
-		dots: true,
-		nav: true,
-		autoplay: true,
-		margin:30,
-		  responsive:{
-			  0:{
-				  items:1
-			  },
-			  600:{
-				  items:2
-			  },
-			  1000:{
-				  items:4
-			  }
-		  }
-	  })
-	
 
 	// Menu Dropdown Toggle
 	if($('.menu-trigger').length){
-		$(".menu-trigger").on('click', function() {	
+		$(".menu-trigger").on('click', function() {
 			$(this).toggleClass('active');
-			$('.header-area .nav').slideToggle(200);
+			$('.header-area .nav').toggleClass('responsive-menu-open');
 		});
 	}
 
@@ -169,8 +168,8 @@
 				var width = $(window).width();
 				if(width < 991) {
 					$('.menu-trigger').removeClass('active');
-					$('.header-area .nav').slideUp(200);	
-				}				
+					$('.header-area .nav').slideUp(200);
+				}
 				$('html,body').animate({
 					scrollTop: (target.offset().top) - 80
 				}, 700);
@@ -179,30 +178,28 @@
 		}
 	});
 
-	$(document).ready(function () {
-	    $(document).on("scroll", onScroll);
-	    
-	    //smoothscroll
-	    $('.scroll-to-section a[href^="#"]').on('click', function (e) {
-	        e.preventDefault();
-	        $(document).off("scroll");
-	        
-	        $('.scroll-to-section a').each(function () {
-	            $(this).removeClass('active');
-	        })
-	        $(this).addClass('active');
-	      
-	        var target = this.hash,
-	        menu = target;
-	       	var target = $(this.hash);
-	        $('html, body').stop().animate({
-	            scrollTop: (target.offset().top) - 79
-	        }, 500, 'swing', function () {
-	            window.location.hash = target;
-	            $(document).on("scroll", onScroll);
-	        });
-	    });
-	});
+	// $(document).ready(function () {
+	//     $(document).on("scroll", onScroll);
+	//
+	//     //smoothscroll
+	//     $('.scroll-to-section a[href^="#"]').on('click', function (e) {
+	//         e.preventDefault();
+	//         $(document).off("scroll");
+	//
+	//         $('.scroll-to-section a').each(function () {
+	//             $(this).removeClass('active');
+	//         })
+	//         $(this).addClass('active');
+	//
+	//        	var target = $(this.hash);
+	//         $('html, body').stop().animate({
+	//             scrollTop: (target.offset().top) - 79
+	//         }, 500, 'swing', function () {
+	//             window.location.hash = target;
+	//             $(document).on("scroll", onScroll);
+	//         });
+	//     });
+	// });
 
 	function onScroll(event){
 	    var scrollPos = $(document).scrollTop();
@@ -238,7 +235,7 @@
 		});
 	});
 
-	
+
 
 	const dropdownOpener = $('.main-nav ul.nav .has-sub > a');
 
@@ -278,6 +275,7 @@
     }
 
 
+	// deprecated
 	function visible(partial) {
         var $t = partial,
             $w = jQuery(window),
@@ -292,28 +290,28 @@
 
     }
 
-    $(window).scroll(function() {
-
-        if (visible($('.count-digit'))) {
-            if ($('.count-digit').hasClass('counter-loaded')) return;
-            $('.count-digit').addClass('counter-loaded');
-
-            $('.count-digit').each(function() {
-                var $this = $(this);
-                jQuery({
-                    Counter: 0
-                }).animate({
-                    Counter: $this.text()
-                }, {
-                    duration: 3000,
-                    easing: 'swing',
-                    step: function() {
-                        $this.text(Math.ceil(this.Counter));
-                    }
-                });
-            });
-        }
-    })
+    // $(window).scroll(function() {
+	//
+    //     if (visible($('.count-digit'))) {
+    //         if ($('.count-digit').hasClass('counter-loaded')) return;
+    //         $('.count-digit').addClass('counter-loaded');
+	//
+    //         $('.count-digit').each(function() {
+    //             var $this = $(this);
+    //             jQuery({
+    //                 Counter: 0
+    //             }).animate({
+    //                 Counter: $this.text()
+    //             }, {
+    //                 duration: 3000,
+    //                 easing: 'swing',
+    //                 step: function() {
+    //                     $this.text(Math.ceil(this.Counter));
+    //                 }
+    //             });
+    //         });
+    //     }
+    // })
 
 
 })(window.jQuery);
